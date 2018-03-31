@@ -5,92 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <title>About Me</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="assets/reset.css">
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
     <!-- Personal CSS -->
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <h1 id="name" class="navbar-brand" href="#">Daniel Oh</h1>
-                
+    <div class="wrapper">
+        <header id="masthead">
+            <div class="container">
+                <a href="index.html" id="name">DanOh</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <main class="container">
+            <div class="main-container">
+                <h1>Contact</h1>
+
+                <form id="contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" id="names" name="name" placeholder="John Smith" required="required">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required="required"></textarea>
+                        </li>
+                    </ul>
+                    <input type="submit">
+                </form>
+
             </div>
 
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Contact</a>
-                </li>
-              </ul>
-        </nav>
-
-
-        <div class="about">
-            <h2>Contact</h2>
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+            <div class="sidebar">
+                <div id="connect">
+                    <h2>Connect with Me</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/github-128.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/stackoverflow-128.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/linkedin-128.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-            </form>
-
-        </div>
-
-        <aside class="contact">
-            <h2>Connect with Me</h2>
-
-            <a href="#">
-                <img src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/128/Github-icon.png" alt="GITHUB" width="50" height="50">
-            </a>
-            <a href="#">
-                <img src="linkedin_icon.ico" alt="linkedin" width="50" height="50">
-            </a>
-        </aside>
-
-
+            </div>
+        </main>
+        <div class="push"></div>
     </div>
-
-
     <footer>
-        Copyright C 2017 Daniel Oh
+        <div class="container">
+            &copy; Copyright 2017 DanO
+        </div>
     </footer>
-
-    <!-- jQuery, Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
